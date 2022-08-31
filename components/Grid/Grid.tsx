@@ -18,7 +18,6 @@ function Grid(props: { children: any }) {
     })
   );
   delete modifiedChildComponents[0]; // removing data source element from child components
-  console.log(modifiedChildComponents);
   return <div className="grid-container">{modifiedChildComponents}</div>;
 }
 // setting sub componets reference
