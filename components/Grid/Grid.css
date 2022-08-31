@@ -1,0 +1,35 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+.grid-column-container {
+  display: flex;
+  flex-direction: column;
+}
+.grid-column-container__title {
+  padding: 8px;
+  min-width: 100px;
+  border: 1px solid;
+  text-align: center;
+  border-bottom: none;
+}
+/* removing border from middile element */
+.grid-column-container:nth-child(2) .grid-column-container__title,
+.grid-column-container:nth-child(2)
+  .grid-column-container__data-wrapper__value {
+  border-right: none;
+  border-left: none;
+}
+
+.grid-column-container__data-wrapper__value {
+  padding: 8px;
+  min-width: 100px;
+  border: 1px solid #000;
+  text-align: center;
+  border-bottom: none;
+}
+
+.grid-column-container__data-wrapper__value:last-child {
+  border-bottom: 1px solid #000;
+}
